@@ -2,7 +2,7 @@
 
 A simple script to facilitate the easy creation of folding block comments and folding regions.
 
-Requires the following code to exist in the AutoHoteky language extensions ahk.settings.json file.
+Requires the following code to exist in the AutoHoteky language extension's ahk.configuration.json file.
 
     // Folding regions marked by ";region" and ";endregion" comments.
     // Folding block comments marked by "/* ;region" and "*/ ;endregion" comments.
