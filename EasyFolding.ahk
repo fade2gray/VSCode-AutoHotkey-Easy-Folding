@@ -52,7 +52,7 @@ bcRemove:
     GoSub, getClipboard
     RegEx := "^\/\*.*?\R|\R\*\/.*?$"
     If (!RegExMatch(Clipboard, RegEx)){
-        MsgBox,% 48+262144,The area selected is..., ...not a Block Comment.
+        MsgBox,% 48+262144,The area selected is..., ...not a Block Comment.`n(Does the region need expanding?)
         Reload
     }
     Clipboard := RegExReplace(Clipboard, RegEx)
@@ -75,7 +75,7 @@ frRemove:
     GoSub, getClipboard
     RegEx := "^`;region.*?\R|\R`;endregion.*?$"
     If (!RegExMatch(Clipboard, RegEx)){
-        MsgBox,% 48+262144,The area selected is..., ...not a Folding Region.
+        MsgBox,% 48+262144,The area selected is..., ...not a Folding Region.`n(Does the region need expanding?)
         Reload
     }
     Clipboard := RegExReplace(Clipboard, RegEx)
