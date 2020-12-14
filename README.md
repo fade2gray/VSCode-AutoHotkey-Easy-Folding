@@ -8,8 +8,8 @@ Requires the following code to exist in the AutoHoteky language extension's ahk.
     // Folding block comments marked by "/* ;region" and "*/ ;endregion" comments.
     "folding": {
         "markers": {
-            "start": "^\\s*\\;\\s*region\\b",
-            "end": "^\\s*\\;\\s*endregion\\b"
+            "start": "^(\\/\\*)?\\s*\\;\\s*region\\b",
+            "end": "^(\\*\\/)?\\s*\\;\\s*endregion\\b"
         }
     }
 
